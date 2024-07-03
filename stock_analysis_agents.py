@@ -9,12 +9,7 @@ from langchain_openai import ChatOpenAI
 
 class StockAnalysisAgent:
     def __init__(self):
-<<<<<<< HEAD
         self.llm = ChatOpenAI(model="gpt-4")
-=======
-        # Initialize the language model for all agents
-        self.llm = ChatAnthropic(model="claude-3-5-sonnet-20240620")
->>>>>>> 06fbd28f781a606d95a78be17c50bf455a2f849b
 
     def financial_analyst(self):
         # Create and return a financial analyst agent
