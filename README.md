@@ -46,7 +46,7 @@ cd AIMS-CrewAI-Demo
 
 We'll be using the following APIs to help us today:
 
-1. [AgentOps API Key]()
+1. [AgentOps API Key](https://docs.agentops.ai/v1/quickstart)
 2. [OpenAI's API for GPT-4 and Text-Embedding-3-Small](https://platform.openai.com/docs/quickstart)
 3. [Sec API](https://sec-api.io/)
 4. [SerpAPI](https://serpapi.com/)

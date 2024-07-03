@@ -9,9 +9,15 @@ from langchain_openai import ChatOpenAI
 
 class StockAnalysisAgent:
     def __init__(self):
+<<<<<<< HEAD
         self.llm = ChatOpenAI(model="gpt-4")
+=======
+        # Initialize the language model for all agents
+        self.llm = ChatAnthropic(model="claude-3-5-sonnet-20240620")
+>>>>>>> 06fbd28f781a606d95a78be17c50bf455a2f849b
 
     def financial_analyst(self):
+        # Create and return a financial analyst agent
         return Agent(
             role="A Professional Financial Analyst",
             goal="Provide clean, concise, and actionable financial analysis.",
@@ -27,6 +33,7 @@ class StockAnalysisAgent:
         )
     
     def research_analyst(self):
+        # Create and return a research analyst agent
         return Agent(
             role="A Professional Research Analyst",
             goal="Gather and analyze information to provide insights and recommendations.",
@@ -41,6 +48,7 @@ class StockAnalysisAgent:
         )
     
     def investment_advisor(self):
+        # Create and return an investment advisor agent
         return Agent(
             role="Private Investment Advisor",
             goal="Provide personalized investment advice and recommendations.",
