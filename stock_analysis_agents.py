@@ -5,11 +5,11 @@ from tools.calculator_tools import CalculatorTools
 from tools.sec_tools import SECTools
 
 from langchain_community.tools.yahoo_finance_news import YahooFinanceNewsTool
-from langchain_anthropic import ChatAnthropic
+from langchain_openai import ChatOpenAI
 
 class StockAnalysisAgent:
     def __init__(self):
-        self.llm = ChatAnthropic(model="claude-3-5-sonnet-20240620")
+        self.llm = ChatOpenAI(model="gpt-4")
 
     def financial_analyst(self):
         return Agent(
